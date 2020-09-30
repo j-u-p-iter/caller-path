@@ -1,6 +1,6 @@
 {
   "name": "@j.u.p.iter/caller-path",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1",
   "main": "dist/lib/index.js",
   "description": "To retreive paths info about callers of a method of a script",
   "keywords": [
