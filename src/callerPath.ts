@@ -15,7 +15,7 @@ interface CallSite {
 
   getColumnNumber(): number;
 
-  getFunction(): Function;
+  getFunction(): () => void;
 
   getEvalOrigin(): string;
 
@@ -48,7 +48,7 @@ const getCallSites = (): CallSite[] => {
 
   Error.prepareStackTrace = originalPrepareStackTrace;
 
-  return stack as unknown as CallSite[];
+  return (stack as unknown) as CallSite[];
 };
 
 export const getCallerPath = (depth = 0) => {
