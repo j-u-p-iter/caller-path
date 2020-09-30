@@ -1,2 +1,2 @@
 # current-path
-Returns fileName and dirName for a currently running script
+Returns path info for a currently running script.
