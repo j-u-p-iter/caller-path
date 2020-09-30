@@ -67,7 +67,3 @@ export const getCallerPath = (depth = 0) => {
     extension
   };
 };
-
-module.exports = {
-  getCallerPath
-};
