@@ -1,0 +1,27 @@
+{
+  "name": "@j.u.p.iter/caller-path",
+  "version": "0.0.0-semantically-released",
+  "main": "dist/lib/index.js",
+  "description": "To retreive paths info about callers of a method of a script",
+  "keywords": [
+    "current file path"
+  ],
+  "typings": "dist/types",
+  "repository": "git@github.com:j-u-p-iter/caller-path.git",
+  "author": "Leontyev Kirill (j.u.p.iter) <pn79122821224@gmail.com> (http://j-u-p-iter.pro/)",
+  "license": "MIT",
+  "scripts": {
+    "commit": "jupiter-scripts precommit --allowJs",
+    "build": "jupiter-scripts build",
+    "start": "yarn run build --watch",
+    "lint": "jupiter-scripts lint --format codeFrame",
+    "lint:fix": "yarn run lint --fix",
+    "test": "jupiter-scripts test",
+    "predocs": "yarn run build",
+    "docs": "jupiter-scripts docs > ./docs/API.md"
+  },
+  "devDependencies": {
+    "@j.u.p.iter/jupiter-scripts": "^1.17.0"
+  },
+  "dependencies": {}
+}
