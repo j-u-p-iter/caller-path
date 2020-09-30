@@ -10,8 +10,8 @@ describe('callerPath', () => {
       extension,
     } = getCallerPath();
 
-    expect(dirPath).toContain('src');
-    expect(filePath).toContain('src/callerPath.spec.ts');
+    expect(dirPath).toContain('caller-path/src');
+    expect(filePath).toContain('caller-path/src/callerPath.spec.ts');
     expect(fileName).toBe('callerPath.spec.ts');
     expect(extension).toBe('.ts');
   });
@@ -25,8 +25,8 @@ describe('callerPath', () => {
         extension,
       } = getCallerPath(1);
 
-      expect(dirPath).toContain('src');
-      expect(filePath).toContain('src/fixtures/helperCaller.ts');
+      expect(dirPath).toContain('caller-path/src');
+      expect(filePath).toContain('caller-path/src/fixtures/helperCaller.ts');
       expect(fileName).toBe('helperCaller.ts');
       expect(extension).toBe('.ts');
     });
